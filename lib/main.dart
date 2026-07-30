@@ -1942,8 +1942,8 @@ class OurStoryScreen extends StatelessWidget {
               Text(
                 content,
                 style: TextStyle(
-                  fontSize: 15,
-                  color: AppColors.textDark,
+                  fontSize: 16,
+                  color: const Color.fromARGB(255, 180, 43, 43),
                   height: 1.5,
                 ),
               ),
