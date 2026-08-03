@@ -9,7 +9,7 @@
 
 import 'package:flutter/material.dart';
 import 'dart:async';
-
+import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(const WeddingApp());
 }
@@ -73,7 +73,7 @@ class WeddingApp extends StatelessWidget {
           brightness: Brightness.light,
         ),
         scaffoldBackgroundColor: AppColors.background,
-        fontFamily: 'Georgia',
+        fontFamily: '',
       ),
       home: const WelcomeScreen(),
     );
@@ -195,9 +195,12 @@ class WelcomeScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child: const Text(
+                  child: Text(
                     'Sign Up',
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                    style:  GoogleFonts.outfit(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+  ),
                   ),
                 ),
               ),
@@ -547,8 +550,8 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Sign up to RSVP and join the celebration',
-                  style: TextStyle(fontSize: 15, color: AppColors.textLight),
+                  'Sign up to  join the celebration',
+                  style: TextStyle(fontSize: 15, color: const Color.fromARGB(255, 182, 171, 171)),
                 ),
                 const SizedBox(height: 32),
 
