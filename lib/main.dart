@@ -132,7 +132,11 @@ class WelcomeScreen extends StatelessWidget {
           child: Column(
             children: [
               const Spacer(flex: 2),
-              Icon(Icons.favorite, size: 70, color: AppColors.primary),
+              Image.asset(
+  'Assets/wedding-rings.png',
+  width: 70,
+  height: 70,
+),
               const SizedBox(height: 24),
               Text(
                 'Sarah & James',
@@ -297,7 +301,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  'Log in to view wedding details and RSVP',
+                  'Log in to view wedding details',
                   style: TextStyle(fontSize: 15, color: AppColors.textLight),
                 ),
                 const SizedBox(height: 32),
