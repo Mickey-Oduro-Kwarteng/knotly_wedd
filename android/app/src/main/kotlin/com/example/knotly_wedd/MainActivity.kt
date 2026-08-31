@@ -1,4 +1,4 @@
-package com.example.knotly_wedd
+package "app.mickey.knotly_wedd"
 
 import io.flutter.embedding.android.FlutterActivity
 
