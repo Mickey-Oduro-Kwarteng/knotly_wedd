@@ -14,6 +14,11 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+//load keystore
+  def keystoreproperties= new properties
+  def keystorepropertiesfile = rootproject.file(key.properties)
+  
+
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "app.mickey.knotly_wedd"
